@@ -1,85 +1,145 @@
 .footer {
-  background-color: #f5f0e9;
-  color: #222;
-  font-family: 'Times New Roman', serif;
-  padding: 40px 60px;
+  background-color: #f8f6f3;
+  color: #333;
+  padding: 50px 60px 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 .footer-top {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.footer-logo {
-  font-size: 28px;
-  letter-spacing: 2px;
-}
-
-.footer-links {
-  display: flex;
+  align-items: flex-start; /* ensures same top height */
   gap: 60px;
 }
 
-.footer-links h4 {
-  font-size: 18px;
-  margin-bottom: 15px;
+
+.footer-left {
+  flex: 2;
 }
+
+.footer-logo {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.footer-links {
+    padding-left: 20px;
+  display: flex;
+  gap: 150px;
+}
+
+.footer-links h4 {
+  font-family: "FT Bureau", serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.6666666667;
+}
+
 
 .footer-links ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
-
-.footer-links li {
-  font-size: 14px;
-  margin-bottom: 8px;
-  cursor: pointer;
+.footer-links ul li {
+    cursor: pointer;
+    font-family: futura-pt, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400; /* last one overrides 500 */
+    letter-spacing: 0.1em;
+    line-height: 1.9230769231;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    transition: opacity 0.5s cubic-bezier(.25, 1, .5, 1);
 }
 
 .footer-links li:hover {
-  text-decoration: underline;
+  color: #b28b67;
 }
 
-.footer-subscribe h4 {
-  font-size: 18px;
-  margin-bottom: 15px;
+.footer-right {
+  flex: 1;
+}
+
+.footer-right h4 {
+      margin-top: 120px; /* ensures it's level with Explore/Company */
+  margin-bottom: 10px;
+  font-family: FT Bureau, serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -.02em;
+    line-height: 1.6666666667; 
 }
 
 .subscribe-box {
   display: flex;
-  border: 1px solid #ddd;
-  background-color: white;
-  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid rgb(148, 149, 150);
+  height: 52px;
+  width: 100%;
+  padding: 0;
 }
 
 .subscribe-box input {
-  border: none;
-  padding: 10px;
   flex: 1;
-  font-size: 14px;
+  border: none;
+  outline: none;
+  padding: 0 0 0 16px;
 }
 
 .subscribe-box button {
-  border: none;
   background: none;
-  font-size: 20px;
-  padding: 0 15px;
+  border: none;
+  color: #000;
+  font-size: 1.2rem;
+  padding: 0 16px;
   cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.social-icons {
+.subscribe-box button:hover {
+  opacity: 0.7;
+}
+
+.footer-social-icons {
   display: flex;
   gap: 15px;
-  font-size: 18px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.footer-social-icons svg:hover {
+  color: #555;
+}
+
+.footer-follow-title { /* New class for h4 */
+    margin-top: 0px;
+ font-family: FT Bureau, serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  line-height: 1.9230769231;
+  color: #000;
 }
 
 .footer-bottom {
-  border-top: 1px solid #ddd;
-  margin-top: 30px;
-  padding-top: 15px;
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
+  margin-top: 40px;
+  padding-top: 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
 }

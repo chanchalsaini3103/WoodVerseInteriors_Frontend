@@ -1,0 +1,130 @@
+.reviews-section {
+  background-color: #fff;
+  padding: 60px 8%;
+}
+
+.review-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.review-row.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.review-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.review-image {
+  flex: 1;
+  padding: 20px;
+  transform: scale(0.95);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.review-row.visible .review-image {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.review-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.review-image:hover img {
+  transform: scale(1.02);
+}
+
+.review-text {
+  flex: 1;
+  padding: 20px;
+  transform: translateX(-20px);
+  opacity: 0;
+  transition: all 0.5s ease 0.2s;
+}
+
+.review-row.reverse .review-text {
+  transform: translateX(20px);
+}
+
+.review-row.visible .review-text {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.review-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #8b7355;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.review-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+.review-text a {
+  color: #8b7355;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+}
+
+.review-text a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #8b7355;
+  transition: width 0.3s ease;
+}
+
+.review-text a:hover {
+  color: #6f5a3e;
+}
+
+.review-text a:hover::after {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .review-row,
+  .review-row.reverse {
+    flex-direction: column;
+  }
+  
+  .review-row {
+    margin-bottom: 30px;
+  }
+  
+  .review-text {
+    transform: translateY(20px) !important;
+  }
+  
+  .review-row.visible .review-text {
+    transform: translateY(0) !important;
+  }
+}

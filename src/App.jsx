@@ -4,6 +4,7 @@ import Services from './components/Services'
 import InteriorGallery from './components/InteriorGallery'
 import EstimateSection from './components/EstimateSection'
 import Footer from './components/Footer'
+import CustomerReviews from './components/CustomerReviews '
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
      <Services />
      <InteriorGallery />
      <EstimateSection />
+     <CustomerReviews />
      <Footer />
     </>
   
