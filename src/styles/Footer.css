@@ -1,0 +1,85 @@
+.footer {
+  background-color: #f5f0e9;
+  color: #222;
+  font-family: 'Times New Roman', serif;
+  padding: 40px 60px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-links h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.footer-links li:hover {
+  text-decoration: underline;
+}
+
+.footer-subscribe h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.subscribe-box {
+  display: flex;
+  border: 1px solid #ddd;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.subscribe-box input {
+  border: none;
+  padding: 10px;
+  flex: 1;
+  font-size: 14px;
+}
+
+.subscribe-box button {
+  border: none;
+  background: none;
+  font-size: 20px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
