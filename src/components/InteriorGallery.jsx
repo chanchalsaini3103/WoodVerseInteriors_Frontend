@@ -18,14 +18,14 @@ const InteriorGallery = () => {
       </div>
 
       <div className="gallery-container">
-        {/* First Row: 3:1:1 */}
+        {/* First Row */}
         <div className="gallery-row">
           <img src={img1} alt="Landscape" className="landscape" />
           <img src={img2} alt="Portrait" className="portrait" />
           <img src={img3} alt="Portrait" className="portrait" />
         </div>
 
-        {/* Second Row: 1:3:1 */}
+        {/* Second Row */}
         <div className="gallery-row">
           <img src={img4} alt="Portrait" className="portrait" />
           <img src={img5} alt="Landscape" className="landscape" />
