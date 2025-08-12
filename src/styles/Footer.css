@@ -1,5 +1,5 @@
 .footer {
-  background-color: #f8f6f3;
+  background-color: #f2ede7;
   color: #333;
   padding: 50px 60px 20px;
   font-family: "Poppins", sans-serif;
@@ -110,6 +110,7 @@
   opacity: 0.7;
 }
 
+
 .footer-social-icons {
   display: flex;
   gap: 15px;
@@ -122,7 +123,6 @@
 .footer-social-icons svg:hover {
   color: #555;
 }
-
 .footer-follow-title { /* New class for h4 */
     margin-top: 0px;
  font-family: FT Bureau, serif;
@@ -142,4 +142,100 @@
   padding-top: 20px;
   font-size: 0.9rem;
   border-top: 1px solid #ddd;
+}
+
+.footer-follow-section {
+  margin-top: 0px; /* separates Follow from above section */
+  padding-top: 0px;
+}
+/* Mobile Responsive Footer */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Left Section */
+  .footer-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-links h4 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  /* Right Section - Mailing + Follow */
+  .footer-right {
+    width: 100%;
+  }
+
+
+  /* Follow Section */
+  .footer-follow-section {
+    margin-top: 20px;
+  }
+
+  .footer-social-icons {
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+
+  /* Bottom Section */
+  .footer-bottom {
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 15px 0;
+  }
+}
+
+/* Small screen adjustments */
+@media (max-width: 480px) {
+  .mailing-list-container input[type="email"] {
+    max-width: 100%;
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscribe-box {
+    max-width: 100%;
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .subscribe-box input {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .subscribe-box button {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
 }

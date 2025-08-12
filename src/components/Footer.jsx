@@ -41,19 +41,23 @@ const Footer = () => {
 
         {/* Right side - Mailing + Social */}
         <div className="footer-right">
-          <h4>Join Our Mailing List</h4>
-          <div className="subscribe-box">
-            <input type="email" placeholder="Email Address" />
-            <button>→</button>
-          </div>
-          <h4 className="footer-follow-title">Follow</h4>
-          <div className="footer-social-icons">
-            <FaInstagram />
-            <FaPinterestP />
-            <FaFacebookF />
-            <FaTiktok />
-          </div>
-        </div>
+  <h4>Join Our Mailing List</h4>
+  <div className="subscribe-box">
+    <input type="email" placeholder="Email Address" />
+    <button>→</button>
+  </div>
+
+  <div className="footer-follow-section">
+    <h4>Follow</h4>
+    <div className="footer-social-icons">
+      <FaInstagram />
+      <FaPinterestP />
+      <FaFacebookF />
+      <FaTiktok />
+    </div>
+  </div>
+</div>
+
       </div>
 
       <div className="footer-bottom">
