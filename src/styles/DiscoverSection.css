@@ -1,197 +1,475 @@
-.discover-section {
-  padding: 80px 5%;
-  background-color: #fff;
-  color: #333;
-}
+/* Discover.css */
 
+/* Base Styles */
 .discover-container {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto 60px;
-  gap: 60px;
+  padding-top: 200px;
+  font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+.hero-content h1,
+.hero-content p {
+  color: black;
 }
 
-.discover-branding {
-  flex: 1;
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #2a2a2a;
+}
+
+/* Hero Section */
+.discover-hero {
+  padding: 0 10%;
+  margin-bottom: 5rem;
+}
+
+.hero-content {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  color: #666;
+}
+
+.featured-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.featured-project {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 400px;
+}
+
+.featured-project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.featured-project:hover img {
+  transform: scale(1.05);
+}
+
+.project-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  color: white;
+}
+
+.project-overlay h3 {
+  color: white;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.project-overlay p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  padding: 0 10%;
+  margin-bottom: 6rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.2rem;
   position: relative;
 }
 
-.brand-logo {
+.section-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #8B5A2B;
+}
+
+.portfolio-filters {
   display: flex;
-  flex-direction: column;
-  position: sticky;
-  top: 120px;
+  gap: 1rem;
 }
 
-.brand-main {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: -1px;
-  line-height: 1;
-  color: #8b7355;
-}
-
-.brand-sub {
+.portfolio-filters button {
+  background: none;
+  border: none;
+  padding: 0.5rem 1.2rem;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 300;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  margin-top: 10px;
-  color: #222;
-}
-
-.brand-line {
-  width: 80px;
-  height: 2px;
-  background-color: #8b7355;
-  margin: 30px 0;
-}
-
-.discover-content {
-  flex: 2;
-}
-
-.discover-headline {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  font-weight: 400;
-  line-height: 1.3;
-  margin-bottom: 30px;
-  color: #222;
-}
-
-.discover-description {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 40px;
-  color: #555;
-}
-
-.design-principles {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-bottom: 50px;
-}
-
-.principle {
-  padding: 30px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
-}
-
-.principle:hover {
-  transform: translateY(-5px);
-}
-
-.principle-icon {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  color: #8b7355;
-}
-
-.principle h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.principle p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.9rem;
-  color: #777;
-  line-height: 1.6;
-}
-
-.explore-btn {
-  display: inline-block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #8b7355;
-  text-decoration: none;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #8b7355;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  border-radius: 50px;
   transition: all 0.3s ease;
 }
 
-.explore-btn:hover {
-  color: #6a5a40;
-  border-color: #6a5a40;
-  letter-spacing: 1px;
+.portfolio-filters button:hover {
+  color: #8B5A2B;
 }
 
-.design-showcase {
+.portfolio-filters button.active {
+  background-color: #8B5A2B;
+  color: white;
+}
+
+.portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
 }
 
-.showcase-item {
+.portfolio-item {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+}
+
+.portfolio-image {
+  position: relative;
+  height: 250px;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #8B5A2B;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.portfolio-info {
+  padding: 1.5rem;
+}
+
+.portfolio-info h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.view-project {
+  color: #8B5A2B;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.view-project:hover {
+  text-decoration: underline;
+}
+
+/* Philosophy Section */
+.philosophy-section {
+  background-color: #f9f5f0;
+  padding: 6rem 10%;
+  margin-bottom: 6rem;
+}
+
+.philosophy-content {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.philosophy-text {
+  flex: 1;
+}
+
+.philosophy-image {
+  flex: 1;
+}
+
+.philosophy-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.lead {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.philosophy-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.point {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.point i {
+  font-size: 1.5rem;
+  color: #8B5A2B;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.point h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.point p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 0 10%;
+  margin-bottom: 6rem;
   text-align: center;
 }
 
-.showcase-img {
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 15px;
-  transition: all 0.5s ease;
+.section-subtitle {
+  color: #666;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
 }
 
-.showcase-item:hover .showcase-img {
-  transform: scale(1.03);
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
-.img-1 {
-  background-image: url('../images/material-studies.jpg');
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  text-align: left;
 }
 
-.img-2 {
-  background-image: url('../images/space-narratives.jpg');
+.testimonial-content {
+  margin-bottom: 1.5rem;
+  position: relative;
 }
 
-.img-3 {
-  background-image: url('../images/light-shadow.jpg');
+.testimonial-content i {
+  color: #8B5A2B;
+  opacity: 0.2;
+  font-size: 2rem;
+  position: absolute;
+  top: -10px;
+  left: -10px;
 }
 
-.showcase-item p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+.testimonial-content p {
+  font-style: italic;
   color: #555;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.client-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.client-info h4 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.client-info p {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* CTA Section */
+.discover-cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('/images/discover-cta.jpg') center/cover no-repeat;
+  padding: 6rem 10%;
+  text-align: center;
+  color: white;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.discover-cta h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.discover-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
   letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.cta-button.primary {
+  background-color: #8B5A2B;
+  color: white;
+  border: 2px solid #8B5A2B;
+}
+
+.cta-button.primary:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.cta-button.secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-button.secondary:hover {
+  background-color: white;
+  color: #8B5A2B;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .discover-hero,
+  .portfolio-section,
+  .testimonials-section {
+    padding: 0 5%;
+  }
 }
 
 @media (max-width: 992px) {
-  .discover-container {
+  .philosophy-content {
     flex-direction: column;
-    gap: 40px;
   }
   
-  .brand-logo {
-    position: relative;
-    top: auto;
+  .philosophy-text {
+    margin-bottom: 3rem;
   }
   
-  .design-principles {
+  .featured-projects {
     grid-template-columns: 1fr;
+  }
+  
+  .featured-project {
+    height: 300px;
   }
 }
 
 @media (max-width: 768px) {
-  .design-showcase {
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .portfolio-filters {
+    flex-wrap: wrap;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .discover-cta {
+    padding: 4rem 5%;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-grid {
     grid-template-columns: 1fr;
   }
   
-  .showcase-img {
-    height: 250px;
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-button {
+    width: 100%;
+    max-width: 250px;
   }
 }

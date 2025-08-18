@@ -62,3 +62,6 @@
 .portfolio .btn-light:active .fa-heart {
   animation: heartBeat 0.5s;
 }
+.portfolio .container{
+  padding-top: 100px;
+}

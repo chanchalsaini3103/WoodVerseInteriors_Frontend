@@ -1,0 +1,352 @@
+/* FollowUs.css */
+
+/* Base Styles */
+.follow-us-container {
+  font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #2a2a2a;
+}
+
+/* Hero Section */
+.follow-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('/images/follow-hero.jpg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero-overlay {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.follow-hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.follow-hero p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+/* Social Platforms Section */
+.social-platforms {
+  padding: 5rem 10%;
+  text-align: center;
+}
+
+.platforms-intro {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+}
+
+.platform-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.platform-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.platform-card:hover {
+  transform: translateY(-5px);
+}
+
+.platform-header {
+  margin-bottom: 1.5rem;
+}
+
+.platform-header i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.platform-header h3 {
+  margin-bottom: 0.5rem;
+}
+
+.platform-card p {
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.follow-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+/* Platform-specific styles */
+.instagram .platform-header i {
+  color: #E1306C;
+}
+
+.instagram .follow-button {
+  background-color: #E1306C;
+  color: white;
+}
+
+.instagram .follow-button:hover {
+  background-color: #c13584;
+}
+
+.pinterest .platform-header i {
+  color: #E60023;
+}
+
+.pinterest .follow-button {
+  background-color: #E60023;
+  color: white;
+}
+
+.pinterest .follow-button:hover {
+  background-color: #ad081b;
+}
+
+.houzz .platform-header i {
+  color: #7AC143;
+}
+
+.houzz .follow-button {
+  background-color: #7AC143;
+  color: white;
+}
+
+.houzz .follow-button:hover {
+  background-color: #5e9e34;
+}
+
+.stats {
+  font-size: 0.9rem;
+  color: #888;
+  font-weight: 500;
+}
+
+/* Instagram Feed Section */
+.instagram-feed, .pinterest-section {
+  padding: 4rem 10%;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.view-all {
+  color: #8B5A2B;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.view-all:hover {
+  text-decoration: underline;
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.instagram-post {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+
+.instagram-post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.instagram-post:hover img {
+  transform: scale(1.05);
+}
+
+.post-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+}
+
+.instagram-post:hover .post-overlay {
+  opacity: 1;
+}
+
+.post-stats {
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.post-stats span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Pinterest Section */
+.pinterest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.pinterest-board {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pinterest-board img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.board-info {
+  padding: 1.2rem;
+  background: white;
+}
+
+.board-info h4 {
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.board-info span {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Newsletter Section */
+.newsletter-cta {
+  background-color: #f9f5f0;
+  padding: 5rem 10%;
+}
+
+.newsletter-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.newsletter-text {
+  flex: 1;
+}
+
+.newsletter-text h2 {
+  margin-bottom: 1rem;
+}
+
+.newsletter-form {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.newsletter-form button {
+  background-color: #8B5A2B;
+  color: white;
+  border: none;
+  padding: 0 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #6d4622;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .newsletter-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .newsletter-form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .follow-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .platform-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .instagram-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter-form {
+    flex-direction: column;
+  }
+  
+  .instagram-grid {
+    grid-template-columns: 1fr;
+  }
+}

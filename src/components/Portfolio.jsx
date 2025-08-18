@@ -9,6 +9,7 @@ import project3 from "../images/portfolio/project3.jpg";
 import project4 from "../images/portfolio/project4.jpg";
 import project5 from "../images/portfolio/project5.jpg";
 import project6 from "../images/portfolio/project6.jpg";
+import Footer2 from "./Footer2";
 
 const Portfolio = () => {
   const [filter, setFilter] = useState("all");
@@ -109,6 +110,7 @@ const Portfolio = () => {
   };
 
   return (
+    <>
     <section className="portfolio py-5 bg-light">
       <div className="container">
         {/* Portfolio Header */}
@@ -285,6 +287,8 @@ const Portfolio = () => {
         </div>
       )}
     </section>
+    <Footer2 />
+    </>
   );
 };
 
