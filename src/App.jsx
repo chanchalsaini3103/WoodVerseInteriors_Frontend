@@ -8,7 +8,9 @@ import EstimateSection from "./components/EstimateSection";
 import Footer from "./components/Footer";
 import CustomerReviews from "./components/CustomerReviews";
 import DiscoverSection from "./components/DiscoverSection";
+import Portfolio from "./components/Portfolio";
 import AboutPage from "./components/AboutPage";
+
 
 const HeroSection = () => (
   <section className="hero-section">
@@ -53,6 +55,15 @@ const App = () => {
             </>
           }
         />
+        
+     <Route
+          path="/read"
+          element={
+            <>
+              <Portfolio />
+            </>
+          }
+        />
          <Route
           path="/about-us"
           element={
@@ -61,6 +72,7 @@ const App = () => {
             </>
           }
         />
+        
       </Routes>
     </>
   );

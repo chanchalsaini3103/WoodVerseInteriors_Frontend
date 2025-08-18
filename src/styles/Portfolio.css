@@ -1,0 +1,64 @@
+.portfolio .portfolio-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio .portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.portfolio .portfolio-image {
+  transition: transform 0.5s ease;
+  height: 250px;
+  object-fit: cover;
+}
+
+.portfolio .portfolio-item:hover .portfolio-image {
+  transform: scale(1.05);
+}
+
+.portfolio .portfolio-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio .portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+/* Scoped Modal */
+.portfolio .modal {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .portfolio .portfolio-image {
+    height: 200px;
+  }
+}
+
+/* Button hover effects (scoped only for portfolio filters) */
+.portfolio .btn-outline-dark.active {
+  background-color: #212529;
+  color: white;
+}
+
+.portfolio .btn-outline-dark:hover {
+  background-color: #212529;
+  color: white;
+}
+
+/* Like button animation */
+@keyframes heartBeat {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.portfolio .btn-light:active .fa-heart {
+  animation: heartBeat 0.5s;
+}
