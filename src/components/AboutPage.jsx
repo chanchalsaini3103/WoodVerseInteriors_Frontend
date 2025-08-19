@@ -2,16 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/AboutPage.css'; 
 import Footer2 from './Footer2';
-import workshopImg from '../images/workshop.jpg'; // adjust path as needed
+import workshopImg from '../images/ourstory.png'; // adjust path as needed
 import papa from '../images/team/1.jpeg'; // adjust path as needed
 import deepak from '../images/team/3.jpeg'; // adjust path as needed
 import kiran from '../images/team/2.jpeg'; // adjust path as needed
+import aboutImage from "../images/about-us.png"; // ✅ import the image
+
 const AboutPage = () => {
   return (
     <>
     <div className="about-us-container">
       {/* Hero Section */}
-      <section className="about-hero">
+      <section className="about-hero" style={{ backgroundImage: `url(${aboutImage})` }} >
         <div className="hero-overlay">
           <h1>Crafting Timeless Spaces</h1>
           <p>Where wood meets vision to create your perfect interior</p>

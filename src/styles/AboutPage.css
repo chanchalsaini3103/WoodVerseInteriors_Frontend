@@ -5,6 +5,7 @@
   font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
   color: #333;
   line-height: 1.6;
+  padding-top: 100px;
 }
 
 h1, h2, h3 {
@@ -16,7 +17,7 @@ h1, h2, h3 {
 /* Hero Section */
 .about-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-              url('/images/about-hero.jpg') center/cover no-repeat;
+              url('/images/about-us.png') center/cover no-repeat;
   height: 70vh;
   display: flex;
   align-items: center;
@@ -24,6 +25,25 @@ h1, h2, h3 {
   text-align: center;
   color: white;
   position: relative;
+}
+
+/* Use black text (remove any conflicting white rules) */
+.about-hero h1,
+.about-hero p {
+  color: #000;
+}
+
+.about-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.about-hero p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
 }
 
 .hero-overlay {
@@ -195,8 +215,7 @@ h1, h2, h3 {
 
 /* CTA Section */
 .about-cta {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-              url('/images/cta-wood.jpg') center/cover no-repeat;
+  background-color: #8B5A2B;
   padding: 6rem 10%;
   text-align: center;
   color: white;

@@ -4,11 +4,12 @@ import '../styles/Blog.css';
 
 // Blog images
 import woodSelection from '../images/projects/loft-transformation.jpg';
-import woodFinishes from '../images/projects/loft-transformation.jpg';
-import woodTones from '../images/projects/loft-transformation.jpg';
-import customFurniture from '../images/projects/loft-transformation.jpg';
-import smallSpaces from '../images/projects/loft-transformation.jpg';
-import woodCare from '../images/projects/loft-transformation.jpg';
+import woodFinishes from '../images/projects/restaurant.jpg';
+import woodTones from '../images/projects/2.jpeg';
+import customFurniture from '../images/projects/5.jpeg';
+import smallSpaces from '../images/projects/6.jpeg';
+import woodCare from '../images/projects/1.jpeg';
+
 import Footer2 from './Footer2';
 
 const Blog = () => {

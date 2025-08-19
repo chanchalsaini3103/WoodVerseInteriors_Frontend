@@ -21,7 +21,8 @@ h1, h2, h3 {
 /* Hero Section */
 .blog-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-              url('/images/blog-hero.jpg') center/cover no-repeat;
+              url('https://wallpaperaccess.com/full/2594894.jpg')
+              center/cover no-repeat;
   height: 50vh;
   display: flex;
   align-items: center;
