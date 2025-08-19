@@ -2,16 +2,33 @@
 
 /* Base Styles */
 .discover-container {
-  padding-top: 200px;
+  padding-top: 120px;  /* adjust to your navbar height */
   font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
   color: #333;
   line-height: 1.6;
 }
-.hero-content h1,
-.hero-content p {
-  color: black;
+
+/* Make hero unmistakably visible and above other elements */
+.discover-hero {
+  position: relative;
+  z-index: 1;                /* sit above page background */
+  padding: 40px 10% 40px;   /* space below a fixed navbar */
+  background: #fff;          /* ensure contrast so text is visible */
+  margin-bottom: 5rem;
 }
 
+/* Ensure the hero text sits above any images below */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Avoid the grid creeping under the hero text */
+.featured-projects {
+  margin-top: 24px;
+}
 
 h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif;
@@ -19,25 +36,15 @@ h1, h2, h3, h4 {
   color: #2a2a2a;
 }
 
-/* Hero Section */
-.discover-hero {
-  padding: 0 10%;
-  margin-bottom: 5rem;
-}
-
-.hero-content {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
 .hero-content h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
+  color: #2a2a2a; /* Override inline style */
 }
 
 .hero-content p {
   font-size: 1.3rem;
-  color: #666;
+  color: #666; /* Override inline style */
 }
 
 .featured-projects {

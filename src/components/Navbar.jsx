@@ -68,13 +68,12 @@ function Navbar() {
           </Link>
 
           <div className="woodverse-mobile-menu-content slide-up">
-            <Link to="/10-years">10 YEARS</Link>
-            <Link to="/read">READ</Link>
-            <Link to="/watch">WATCH</Link>
+            <Link to="/discover">Discover</Link>
+            <Link to="/read">PORTFOLIO</Link>
+            <Link to="/watch">BLOG</Link>
             <Link to="/shop">SHOP</Link>
-            <Link to="/studio">STUDIO</Link>
-            <Link to="/portfolio">PORTFOLIO</Link>
-            <Link to="/about">ABOUT</Link>
+            <Link to="/about-us">ABOUT US</Link>
+            <Link to="/contact">CONTACT</Link>
             <Link to="/follow">FOLLOW</Link>
 
             <div className="woodverse-mobile-shop-cta">

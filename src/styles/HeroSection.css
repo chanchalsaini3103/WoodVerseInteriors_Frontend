@@ -1,7 +1,7 @@
 /* HeroSection.css */
 .hero-section {
   height: 100vh;
-  background: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace') center/cover;
+  background: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,38 +13,37 @@
 .hero-section::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
   animation: fadeIn 0.8s ease-out forwards;
 }
 
-.hero-content > * {
+/* 🔒 Scoped only to the HeroSection */
+.hero-section .hero-content > * {
   opacity: 0;
   transform: translateY(20px);
 }
 
 .white-text1, .white-text2 {
-  font-family: FT Bureau, serif;
+  font-family: "FT Bureau", serif;
   color: white !important;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5) !important;
 }
 .white-text1 { padding-top: 120px; }
 
 .fade-up { animation: fadeUp 0.8s ease-out forwards; }
+
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
 
-.hero-content h1 {
+.hero-section .hero-content h1 {
   font-size: 48px;
   margin-bottom: 20px;
   font-weight: 300;
   letter-spacing: 1px;
 }
 
-.hero-content p {
+.hero-section .hero-content p {
   font-size: 20px;
   margin-bottom: 30px;
 }
@@ -57,7 +56,7 @@
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s;
-  font-family: FT Bureau, serif;
+  font-family: "FT Bureau", serif;
 }
 
 .cta-button:hover {

@@ -2,13 +2,14 @@
 
 /* Base Styles */
 .blog-container {
+  
   font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
   color: #333;
   line-height: 1.6;
   display: grid;
   grid-template-columns: 1fr 300px;
   gap: 3rem;
-  padding: 0 10%;
+  padding: 100px 10%;
 }
 
 h1, h2, h3 {
