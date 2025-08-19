@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/AboutPage.css'; // You'll need to create corresponding CSS
+import '../styles/AboutPage.css'; 
 import Footer2 from './Footer2';
-
+import workshopImg from '../images/workshop.jpg'; // adjust path as needed
+import papa from '../images/team/1.jpeg'; // adjust path as needed
+import deepak from '../images/team/3.jpeg'; // adjust path as needed
+import kiran from '../images/team/2.jpeg'; // adjust path as needed
 const AboutPage = () => {
   return (
     <>
@@ -20,7 +23,7 @@ const AboutPage = () => {
         <div className="story-content">
           <h2>Our Story</h2>
           <p className="lead-text">
-            Founded in 2010, MT Woodverse Interiors began as a small woodworking shop with a passion for 
+            Founded in 2000, MH Interiors began as a small woodworking shop with a passion for 
             transforming raw materials into functional art.
           </p>
           <p>
@@ -44,7 +47,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div className="story-image">
-          <img src="/images/workshop.jpg" alt="Our workshop" />
+          <img src={workshopImg} alt="Our workshop" />
         </div>
       </section>
 
@@ -93,24 +96,24 @@ const AboutPage = () => {
         </p>
         <div className="team-grid">
           <div className="team-member">
-            <img src="/images/team/michael.jpg" alt="Michael Thompson" />
-            <h3>Michael Thompson</h3>
+             <img src={papa} alt="Our workshop" />
+            <h3>Mohanlal Suthar</h3>
             <p className="position">Founder & Lead Designer</p>
             <p className="bio">
               With over 25 years in woodworking, Michael's vision drives the aesthetic direction of MT Woodverse.
             </p>
           </div>
           <div className="team-member">
-            <img src="/images/team/sarah.jpg" alt="Sarah Chen" />
-            <h3>Sarah Chen</h3>
+             <img src={deepak} alt="Our workshop" />
+            <h3>Deepak Suthar</h3>
             <p className="position">Head of Sustainable Design</p>
             <p className="bio">
               Sarah ensures our materials and processes meet the highest environmental standards.
             </p>
           </div>
           <div className="team-member">
-            <img src="/images/team/carlos.jpg" alt="Carlos Mendez" />
-            <h3>Carlos Mendez</h3>
+            <img src={kiran} alt="Our workshop" />
+            <h3>Kiran Suthar</h3>
             <p className="position">Master Woodworker</p>
             <p className="bio">
               A third-generation carpenter, Carlos brings traditional techniques to our modern designs.

@@ -1,24 +1,35 @@
 import React from 'react';
 import '../styles/FollowUs.css';
 import Footer2 from './Footer2';
+import insta1 from '../images/og/1.jpeg';
+import insta2 from '../images/og/9.jpeg';
+import insta3 from '../images/og/3.jpeg';
+import insta4 from '../images/og/4.jpeg';
+import insta5 from '../images/og/5.jpeg';
+import insta6 from '../images/og/6.jpeg';
+
+import pin10 from '../images/og/10.jpeg';
+import pin11 from '../images/og/11.jpeg';
+import pin12 from '../images/og/12.jpeg';
+import pin13 from '../images/og/13.jpeg';
 
 const FollowUs = () => {
   // Sample social media posts
-  const instagramPosts = [
-    { id: 1, image: '/images/social/insta-1.jpg', likes: '2.4k', comments: '143' },
-    { id: 2, image: '/images/social/insta-2.jpg', likes: '1.8k', comments: '92' },
-    { id: 3, image: '/images/social/insta-3.jpg', likes: '3.1k', comments: '217' },
-    { id: 4, image: '/images/social/insta-4.jpg', likes: '2.7k', comments: '156' },
-    { id: 5, image: '/images/social/insta-5.jpg', likes: '2.0k', comments: '124' },
-    { id: 6, image: '/images/social/insta-6.jpg', likes: '1.5k', comments: '87' }
-  ];
+const instagramPosts = [
+  { id: 1, image: insta1, likes: '2.4k', comments: '143' },
+  { id: 2, image: insta2, likes: '1.8k', comments: '92' },
+  { id: 3, image: insta3, likes: '3.1k', comments: '217' },
+  { id: 4, image: insta4, likes: '2.7k', comments: '156' },
+  { id: 5, image: insta5, likes: '2.0k', comments: '124' },
+  { id: 6, image: insta6, likes: '1.5k', comments: '87' }
+];
 
-  const pinterestBoards = [
-    { id: 1, image: '/images/social/pin-1.jpg', title: 'Modern Wood Interiors', pins: '428' },
-    { id: 2, image: '/images/social/pin-2.jpg', title: 'Kitchen Designs', pins: '512' },
-    { id: 3, image: '/images/social/pin-3.jpg', title: 'Custom Furniture', pins: '387' },
-    { id: 4, image: '/images/social/pin-4.jpg', title: 'Sustainable Materials', pins: '295' }
-  ];
+const pinterestBoards = [
+  { id: 1, image: pin10, title: 'Modern Wood Interiors', pins: '428' },
+  { id: 2, image: pin11, title: 'Kitchen Designs', pins: '512' },
+  { id: 3, image: pin12, title: 'Custom Furniture', pins: '387' },
+  { id: 4, image: pin13, title: 'Custom Furniture', pins: '387' }
+];
 
   return (
     <>
@@ -47,12 +58,12 @@ const FollowUs = () => {
             </div>
             <p>Daily design inspiration and project sneak peeks</p>
             <a 
-              href="https://instagram.com/mtwoodverse" 
+              href="https://www.instagram.com/artistry_spaces/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="follow-button"
             >
-              Follow @mtwoodverse
+              Follow @mhinteriors
             </a>
             <div className="stats">
               <span>24.5k followers</span>
@@ -106,7 +117,7 @@ const FollowUs = () => {
         <div className="section-header">
           <h2>Latest From Instagram</h2>
           <a 
-            href="https://instagram.com/mtwoodverse" 
+            href="https://instagram.com/artistry_spaces" 
             target="_blank" 
             rel="noopener noreferrer"
             className="view-all"

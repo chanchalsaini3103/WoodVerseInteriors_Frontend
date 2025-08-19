@@ -149,7 +149,7 @@ const ContactUs = () => {
               <i className="fas fa-map-marker-alt"></i>
               <div>
                 <h4>Visit Our Showroom</h4>
-                <p>123 Design Avenue<br />Woodland District<br />New York, NY 10001</p>
+                <p>Sadguru Darshan<br />Ambegaon Pathar<br />Pune</p>
               </div>
             </div>
 
@@ -157,7 +157,7 @@ const ContactUs = () => {
               <i className="fas fa-phone-alt"></i>
               <div>
                 <h4>Call Us</h4>
-                <p>+1 (212) 555-0187<br />Mon-Fri: 9am-6pm EST</p>
+                <p>+91 9022232168<br />Mon-Fri: 9am-6pm EST</p>
               </div>
             </div>
 
@@ -165,7 +165,7 @@ const ContactUs = () => {
               <i className="fas fa-envelope"></i>
               <div>
                 <h4>Email Us</h4>
-                <p>info@mtwoodverse.com<br />consultation@mtwoodverse.com</p>
+                <p>info@mhinteriors.com<br />consultation@mhinteriors.com</p>
               </div>
             </div>
 
@@ -199,7 +199,7 @@ const ContactUs = () => {
         <div className="cta-content">
           <h2>Schedule a Personal Consultation</h2>
           <p>
-            Experience the MT Woodverse difference with a complimentary 30-minute design consultation 
+            Experience the MH Interiors difference with a complimentary 30-minute design consultation 
             at our showroom or virtually.
           </p>
           <Link to="/appointment" className="cta-button">

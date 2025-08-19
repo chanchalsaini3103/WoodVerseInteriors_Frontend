@@ -5,7 +5,7 @@ const Footer2 = () => {
   return (
     <footer className="footer-container">
            
-        <p>© {new Date().getFullYear()} MT Woodverse. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} MH Interiors. All rights reserved.</p>
      
     </footer>
   );

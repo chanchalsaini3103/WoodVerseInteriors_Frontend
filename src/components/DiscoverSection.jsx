@@ -108,8 +108,26 @@ const DiscoverSection = () => {
       {/* Hero Section */}
       <section className="discover-hero">
         <div className="hero-content">
-          <h1>Discover MT Woodverse</h1>
-          <p>Explore our portfolio of exquisite wood-centric interior designs</p>
+         <h1 style={{
+  color: '#2a2a2a',
+  fontSize: '3.5rem',
+  fontFamily: "'Playfair Display', serif",
+  fontWeight: '700',
+  textAlign: 'center',
+  marginBottom: '1rem'
+}}>
+  Discover MT Woodverse
+</h1>
+
+<p style={{
+  color: '#666',
+  fontSize: '1.3rem',
+  fontFamily: "'Montserrat', sans-serif",
+  textAlign: 'center'
+}}>
+  Explore our portfolio of exquisite wood-centric interior designs
+</p>
+
         </div>
         <div className="featured-projects">
           {featuredProjects.map(project => (

@@ -1,7 +1,11 @@
 .footer-container {
-  background-color: #1a1a1a;
-  color: #f5f5f5;
-  padding: 10px 10px 10px;
+  background-color: rgb(242, 237, 231);
+  color: black;
+  padding: 10px;
   font-family: 'Roboto', sans-serif;
+  display: flex;           /* enables flexbox */
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+  text-align: center;      /* center text inside elements */
+  flex-direction: column;  /* optional, for stacking items vertically */
 }
-
