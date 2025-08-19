@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-left">
-          <div className="footer-logo">WoodVerse Interiors</div>
+          <div className="footer-logo">MH Interiors</div>
           <div className="footer-links">
             <div>
               <h4>Explore</h4>
@@ -28,7 +28,7 @@ const Footer = () => {
             <div>
               <h4>Company</h4>
               <ul>
-                <li>About WoodVerse Interiors</li>
+                <li>About MH Interiors</li>
                 <li>Careers</li>
                 <li>Privacy Policy</li>
                 <li>Terms of Use</li>
@@ -61,8 +61,8 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <span>COPYRIGHT WoodVerse Interiors 2025</span>
-        <span>MADE BY Chanchal Saini</span>
+        <span>COPYRIGHT MH Interiors 2025</span>
+        <span>MADE BY Deepak Suthar</span>
       </div>
     </footer>
   );

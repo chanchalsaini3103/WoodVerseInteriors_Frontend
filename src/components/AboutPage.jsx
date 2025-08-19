@@ -100,7 +100,7 @@ const AboutPage = () => {
             <h3>Mohanlal Suthar</h3>
             <p className="position">Founder & Lead Designer</p>
             <p className="bio">
-              With over 25 years in woodworking, Michael's vision drives the aesthetic direction of MT Woodverse.
+              With over 25 years in woodworking, Michael's vision drives the aesthetic direction of MH Interiors.
             </p>
           </div>
           <div className="team-member">

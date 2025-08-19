@@ -45,7 +45,7 @@ const DiscoverSection = () => {
         {/* Hero */}
         <section className="discover-hero">
           <div className="discover-hero-content">
-            <h1>Discover MT Woodverse Interiors</h1>
+            <h1>Discover MH Interiors</h1>
             <p>Explore our portfolio of exquisite wood-centric interior designs</p>
           </div>
 
@@ -107,7 +107,7 @@ const DiscoverSection = () => {
             <div className="philosophy-text">
               <h2>Our Design Approach</h2>
               <p className="lead">
-                At MT Woodverse, we believe wood is not just a material—it’s the soul of a space.
+                At MH Interiors, we believe wood is not just a material—it’s the soul of a space.
               </p>
               <p>
                 We start by understanding the character of each wood species. Then we blend
@@ -147,7 +147,7 @@ const DiscoverSection = () => {
               <div className="testimonial-content">
                 <i className="fas fa-quote-left" />
                 <p>
-                  MT Woodverse transformed our downtown loft with custom walnut cabinetry
+                  MH Interiors transformed our downtown loft with custom walnut cabinetry
                   and flooring. The attention to detail is extraordinary.
                 </p>
               </div>

@@ -88,7 +88,7 @@ const Blog = () => {
       {/* Hero Section */}
       <section className="blog-hero">
         <div className="hero-overlay">
-          <h1>MT Woodverse Journal</h1>
+          <h1>MH Interiors Journal</h1>
           <p>Design insights, woodworking expertise, and interior inspiration</p>
         </div>
       </section>
